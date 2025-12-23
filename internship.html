@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internship Program | Cyber Secured India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #00e5ff;
+            --secondary: #0a192f;
+            --accent: #64ffda;
+            --dark: #020c1b;
+            --light: #ccd6f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #020c1b, #0a192f);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            animation: glow 2s infinite alternate;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px var(--primary); }
+            to { text-shadow: 0 0 25px var(--primary); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 229, 255, 0.2);
+        }
+
+        .card h2 {
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 20px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .ideal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .ideal div {
+            background: rgba(0,0,0,0.3);
+            padding: 20px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta button {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #000;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,229,255,0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Free 3-Month Internship Program</h1>
+    <p>Build real-world cybersecurity skills with hands-on experience</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Internship Overview</h2>
+        <p>
+            Our structured internship program is designed to provide practical cybersecurity exposure
+            through real-world simulations, guided mentorship, and industry-aligned projects.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>What You Will Get</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Hands-on Labs</h3>
+                <p>Practice real attack & defense techniques</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-user-secret"></i>
+                <h3>Live Investigations</h3>
+                <p>Simulated cyber crime & incident response</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Industry Mentorship</h3>
+                <p>Learn directly from security professionals</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Project Development</h3>
+                <p>Build portfolio-ready cybersecurity projects</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-certificate"></i>
+                <h3>Certifications</h3>
+                <p>Get certified after successful completion</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Ideal For</h2>
+        <div class="ideal">
+            <div>🎓 Students</div>
+            <div>👨‍💻 Aspiring Cybersecurity Professionals</div>
+            <div>🔍 Beginners Seeking Real-World Exposure</div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <button onclick="applyNow()">Apply Now</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Cyber Secured India | Internship Program
+</footer>
+
+<script>
+    function applyNow() {
+        alert("Application process coming soon!\nStay connected with Cyber Secured India 🚀");
+    }
+</script>
+
+</body>
+</html>
